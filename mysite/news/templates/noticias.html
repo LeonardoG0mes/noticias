@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Noticias
+{% endblock %}
+{% block content %}
+<h1>Notícias</h1>
+{% for noticia in noticias %}
+<div class="noticia">
+    <a href="{% url 'noticias:noticia' noticia.id %}">
+        <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}" width="800" height="450">
+        <h2>{{ noticia.titulo }}</h2>
+        <p>{{ noticia.resumo|truncatewords:30 }}</p>
+        <p class="data"><strong>Data de publicação:</strong> {{ noticia.data_publicacao }}</p>
+        <br><br>
+    </a>
+</div>
+{% endfor %}
+{% endblock %}

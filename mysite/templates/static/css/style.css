@@ -1,0 +1,138 @@
+/* Estilos para o body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Estilos para o header */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #F4D03F;
+}
+
+/* Estilos para o main */
+.news-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Estilos para as notícias */
+.noticia {
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.noticia img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.noticia .titulo {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.noticia .data {
+  font-size: 16px;
+  color: #999;
+  margin: 10px;
+}
+
+.noticia .resumo {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.noticia a {
+  display: block;
+  text-align: right;
+  margin: 10px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.noticia h2 {
+  font-size: 25px;
+  text-align: left;
+
+}
+.noticia p {
+  font-size: 15px;
+  text-align: left; /* Adicionado para alinhar o texto à esquerda */
+}
+
+
+.noticia a:hover {
+  color: #0099cc;
+}
+
+/* Estilos para o footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #F4D03F;
+}
+
+.news-wrapper .noticia {
+  width: calc((100% / 3) - 20px); /* 3 notícias por linha, com 20px de espaço entre elas */
+}
+
+@media screen and (max-width: 768px) {
+  .news-wrapper .noticia {
+    width: calc((100% / 2) - 20px); /* 2 notícias por linha em telas menores */
+  }
+}
