@@ -1,0 +1,41 @@
+/* esportes.css */
+h1 {
+  text-align: center;
+}
+
+.container-noticia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 600px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container-noticia:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.container-noticia img {
+  width: 600px;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container-noticia a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-noticia h2 {
+  margin-top: 10px;
+}
+
+.container-noticia .data {
+  font-style: italic;
+  color: #888888;
+  margin-top: 5px;
+}

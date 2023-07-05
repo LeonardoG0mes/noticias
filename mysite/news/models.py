@@ -1,6 +1,21 @@
 from django.db import models
 
 class Noticia(models.Model):
+    LEGENDA_CHOICES = (
+        ('esporte', 'Esporte'),
+        ('entretenimento', 'Entretenimento'),
+        ('política', 'Política'),
+        ('economia', 'Economia'),
+        ('tecnologia', 'Tecnologia'),
+        ('saúde', 'Saúde'),
+        ('ciência', 'Ciência'),
+        ('educação', 'Educação'),
+        ('meio_ambiente', 'Meio Ambiente'),
+        ('cultura', 'Cultura'),
+        ('aleatorio', 'Acontecimento Aleatório'),
+        # Adicione outros tipos de legenda conforme necessário
+    )
+    legenda = models.CharField(max_length=50, choices=LEGENDA_CHOICES)
     titulo = models.CharField(max_length=200)
     resumo = models.CharField(max_length=500, blank=True)
     corpo = models.TextField()

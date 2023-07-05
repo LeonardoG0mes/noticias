@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    animation: fadeInNav 0.5s ease-in-out;
+}
+
+nav li {
+    margin-right: 20px;
+    animation: slideInNav 0.5s ease-in-out;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #F4D03F;
+}
+
+@keyframes slideInNav {
+    from {
+    transform: translateX(-20px);
+    opacity: 0;
+    }
+    to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+}
+
+@keyframes fadeInNav {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #F4D03F;
+}
+
+.news-wrapper .noticia {
+    width: calc((100% / 3) - 20px); /* 3 notícias por linha, com 20px de espaço entre elas */
+}
+
+@media screen and (max-width: 768px) {
+    .news-wrapper .noticia {
+    width: calc((100% / 2) - 20px); /* 2 notícias por linha em telas menores */
+    }
+}
+
+  

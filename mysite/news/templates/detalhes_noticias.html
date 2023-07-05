@@ -1,55 +1,44 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<head>
-<link rel="stylesheet" href="{% static 'css/noticias.css' %}">
-<title>{{ noticia.titulo }}</title>
-</head>
-<body>
-    <header>
-        <nav>
+{% block style %}<link rel="stylesheet" href="{% static 'css/detalhes.css' %}">{% endblock %}
+
+{% block title %}{{ noticia.titulo }}{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="header">
+        <h1>{{ noticia.titulo }}</h1>
+    </div>
+    <div class="detalhes">
+        {% if noticia.imagem %}
+        <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}">
+        {% endif %}
+        {% if noticia.resumo %}
+        <p class="resumo">{{ noticia.resumo }}</p>
+        {% endif %}
+        <p>{{ noticia.corpo|linebreaks }}</p>
+        <div class="conteudo-extra">
+            <h3>Conteúdo Extra</h3>
+            {% if noticia.link or noticia.link1 or noticia.link2 or noticia.link3 or noticia.link4 %}
             <ul>
-                <li><a href="{% url 'noticias:home' %}">Home</a></li>
-                <li><a href="{% url 'noticias:noticias' %}">Notícias</a></li>
-                <li><a href="{% url 'noticias:contato' %}">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="header">
-            <h1>{{ noticia.titulo }}</h1>
-        </div>
-        <div class="noticia">
-            {% if noticia.imagem %}
-                <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}">
-            {% endif %}
-            {% if noticia.resumo %}
-                <p class="resumo">{{ noticia.resumo }}</p>
-            {% endif %}
-            <p>{{ noticia.corpo|linebreaks }}</p>
-            <div class="conteudo-extra">
-                <h3>Conteúdo Extra</h3>
-                {% if noticia.link or noticia.link1 or noticia.link2 or noticia.link3 or noticia.link4 %}
-                  <ul>
-                    {% if noticia.link %}
-                        <li><a href="{{ noticia.link }}">{{ noticia.nome_link }}</a></li>
-                    {% endif %}
-                    {% if noticia.link1 %}
-                        <li><a href="{{ noticia.link1 }}">{{ noticia.nome_link1 }}</a></li>
-                    {% endif %}
-                    {% if noticia.link2 %}
-                        <li><a href="{{ noticia.link2 }}">{{ noticia.nome_link2 }}</a></li>
-                    {% endif %}
-                    {% if noticia.link3 %}
-                        <li><a href="{{ noticia.link3 }}">{{ noticia.nome_link3 }}</a></li>
-                    {% endif %}
-                    {% if noticia.link4 %}
-                        <li><a href="{{ noticia.link4 }}">{{ noticia.nome_link4 }}</a></li>
-                    {% endif %}
-                  </ul>
+                {% if noticia.link %}
+                <li><a href="{{ noticia.link }}">{{ noticia.nome_link }}</a></li>
                 {% endif %}
-              </div>             
+                {% if noticia.link1 %}
+                <li><a href="{{ noticia.link1 }}">{{ noticia.nome_link1 }}</a></li>
+                {% endif %}
+                {% if noticia.link2 %}
+                <li><a href="{{ noticia.link2 }}">{{ noticia.nome_link2 }}</a></li>
+                {% endif %}
+                {% if noticia.link3 %}
+                <li><a href="{{ noticia.link3 }}">{{ noticia.nome_link3 }}</a></li>
+                {% endif %}
+                {% if noticia.link4 %}
+                <li><a href="{{ noticia.link4 }}">{{ noticia.nome_link4 }}</a></li>
+                {% endif %}
+            </ul>
+            {% endif %}
         </div>
     </div>
-</body>
-</html>
+</div>
+{% endblock %}

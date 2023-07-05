@@ -1,17 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block title %}News{% endblock %}
+{% block title %}Esportes{% endblock %}
 
-{% block style %}<link rel="stylesheet" href="{% static 'css/st.css' %}">{% endblock %}
+{% block style %}<link rel="stylesheet" href="{% static 'css/esportes.css' %}">{% endblock %}
 
 
 {% block content %}
 {% for noticia in noticias %}
 <div class="container-noticia">
     <a href="{% url 'noticias:noticia' noticia.id %}">
-        <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}" width="800" height="450">
-        <h2>{{ noticia.titulo }}</h2>
+      <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}" width="800" height="450">
+      <h2>{{ noticia.titulo }}</h2>
     </a>
     <p class="data"><strong>Data de publicação:</strong> {{ noticia.data_publicacao }}</p>
 </div>

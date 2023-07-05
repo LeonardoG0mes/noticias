@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block title %}
-    Contato
-{% endblock %}
+{% block title %}Contato{% endblock %}
+
+{% block style %}<link rel="stylesheet" href="{% static 'css/contato.css' %}">{% endblock %}
+
 
 {% block content %}
     <p>Entre em contato conosco pelo email <a href="mailto:seu_email">contato@meusite.com</a>.</p>
