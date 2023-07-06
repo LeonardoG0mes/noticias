@@ -16,6 +16,8 @@ class Noticia(models.Model):
         # Adicione outros tipos de legenda conforme necessário
     )
     legenda = models.CharField(max_length=50, choices=LEGENDA_CHOICES)
+    sub_legenda = models.CharField(max_length=50, blank=True)
+    home = models.BooleanField(default=False)
     titulo = models.CharField(max_length=200)
     resumo = models.CharField(max_length=500, blank=True)
     corpo = models.TextField()

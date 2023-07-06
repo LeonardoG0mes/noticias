@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/em.css' %}">
+{% endblock %}
+
+{% block title %}Entretenimento{% endblock %}
+
+{% block content %}
+<div class="container-noticias">
+  {% for sub_legenda in sub_legendas %}
+    <h2>{{ sub_legenda }}</h2>
+    <div class="noticias-grid">
+      {% for noticia in noticias %}
+        {% if noticia.sub_legenda == sub_legenda %}
+          <div class="noticia">
+            <a href="{% url 'noticias:noticia' noticia.id %}">
+              <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}" width="100" height="100">
+              <h3>{{ noticia.titulo }}</h3>
+              <p>{{ noticia.conteudo }}</p>
+            </a>
+            <p class="data">{{ noticia.data_publicacao }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
+{% endblock %}

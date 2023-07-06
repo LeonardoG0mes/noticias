@@ -1,0 +1,63 @@
+
+/* Estilos para a página de notícias de entretenimento */
+
+.container-noticias {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container-noticias h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.noticia {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.noticia a {
+  text-decoration: none;
+  color: #333;
+}
+
+.noticia a:hover {
+  text-decoration: underline;
+}
+
+.noticia img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.noticia h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.noticia p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.noticia .data {
+  font-size: 12px;
+  color: #999;
+}
