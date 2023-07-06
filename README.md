@@ -1,6 +1,4 @@
-# noticias
 
-Site de Notícias
 Este é um projeto de site de notícias que visa fornecer aos usuários uma plataforma para visualizar e interagir com as últimas notícias. O site atualmente possui as seguintes páginas:
 
 Página Inicial: Exibe as 7 principais notícias em destaque.
