@@ -17,7 +17,8 @@ Este é o repositório do meu projeto Django, que consiste em um site de notíci
 
 ## Atualizações dos Modelos
 
-- Adicionado o campo "sub_legenda" ao modelo de notícias para categorizar as notícias em subcategorias específicas, permitindo uma filtragem mais precisa.
+- Adicionado o campo "sub_legenda" ao modelo de notícia para categorizar as notícias em subcategorias específicas, permitindo uma filtragem mais precisa.
+- Adicionado o campo "home" ao modelo de notíca para adicionar a notícia como principal e adiciona-la a na pagina home. 
 
 ## Atualizações das Views
 
