@@ -1,33 +1,30 @@
-# Meu Projeto Django
+# Notícias
 
-Este é o repositório do meu projeto Django, que consiste em um site de notícias. O projeto passou por várias atualizações e melhorias recentemente. Aqui está um resumo das principais alterações:
+Este é um projeto de exemplo para um site de notícias desenvolvido em Django.
 
 ## Alterações Recentes
 
-- Adicionados novos modelos para as notícias, incluindo o campo "sub_legenda" para filtrar as notícias por subcategoria.
-- Atualizadas as views para lidar com as novas páginas e filtros de subcategoria.
-- Criada a página de Entretenimento, que exibe notícias relacionadas à categoria "Entretenimento" e suas subcategorias.
-- Feitas melhorias no HTML e CSS da página de Entretenimento para exibir as notícias lado a lado e ajustar o espaçamento entre elas.
+- Resolvido bug de renderização no arquivo `entretenimento.html`, removendo divs desnecessárias e garantindo que as notícias sejam exibidas lado a lado.
+- Atualizado o arquivo `README` com as alterações recentes e os planos futuros.
 
-## Novas Páginas
+## Bug Resolvido
 
-- Entretenimento: Essa página exibe notícias relacionadas ao mundo do entretenimento, incluindo subcategorias como Música, Cinema, Artistas, Fofoca, Séries e Desenhos. As notícias são exibidas lado a lado, permitindo uma visualização mais agradável.
-- Política: Agora você pode acessar a página de Política para obter notícias relacionadas ao cenário político. Mantenha-se informado sobre os acontecimentos mais recentes na área política.
+Foi identificado um problema na renderização da página de entretenimento, onde havia excesso de divs e conflitos de estilos. Esse bug foi corrigido removendo as divs desnecessárias e ajustando os estilos para exibir as notícias lado a lado, com as imagens centralizadas e se adaptando ao tamanho da página.
 
+## Planos Futuros
 
-## Atualizações dos Modelos
+- Adicionar o modelo `Topico` para categorizar as notícias por tópicos.
+- Implementar a funcionalidade de seleção de tópicos na página de administração para associar cada notícia a um ou mais tópicos.
+- Atualizar as páginas de listagem de notícias para exibir as notícias agrupadas por tópicos, de uma forma mais eficiente.
+- Aprimorar o design e a usabilidade das páginas.
+- Refinar os estilos e tornar o site responsivo para dispositivos móveis.
+- Expandir os modelos e funcionalidades para melhorar a administração do site.
+- Etc.
 
-- Adicionado o campo "sub_legenda" ao modelo de notícia para categorizar as notícias em subcategorias específicas, permitindo uma filtragem mais precisa.
-- Adicionado o campo "home" ao modelo de notíca para adicionar a notícia como principal e adiciona-la a na pagina home. 
+## Como Executar o Projeto
 
-## Atualizações das Views
-
-- Atualizadas as views para lidar com as novas páginas e filtros de subcategoria. Agora as notícias são exibidas corretamente nas páginas de Esportes, Entretenimento e outras categorias.
-
-## Problema com a Renderização do HTML na Página de Entretenimento
-
-- Foi identificado um problema na renderização do HTML na página de Entretenimento, onde as notícias estavam sendo exibidas em uma única coluna em vez de lado a lado. Uma solução será implementada para corrigir esse problema. No entanto, se ocorrerem problemas adicionais de renderização, peço desculpas pelo inconveniente e solicito que informe-me para que eu resolver o problema o mais rápido possível.
-
-Agradeço por acompanhar as atualizações do projeto e espero que goste das novas funcionalidades e melhorias implementadas!
-
-
+1. Clone este repositório.
+2. Crie um ambiente virtual e instale as dependências do Django.
+3. Execute as migrações do banco de dados.
+4. Execute o servidor de desenvolvimento do Django.
+5. Acesse o site em seu navegador.
