@@ -1,30 +1,25 @@
-# Notícias
+# Meu Projeto Django
 
-Este é um projeto de exemplo para um site de notícias desenvolvido em Django.
+Este é o repositório do meu projeto Django, um site de notícias. O projeto passou por várias atualizações recentemente e aqui estão os destaques:
 
-## Alterações Recentes
+## Novas Páginas
 
-- Resolvido bug de renderização no arquivo `entretenimento.html`, removendo divs desnecessárias e garantindo que as notícias sejam exibidas lado a lado.
-- Atualizado o arquivo `README` com as alterações recentes e os planos futuros.
+- Política: Agora você pode acessar a página de Política para obter notícias relacionadas ao cenário político. Mantenha-se informado sobre os acontecimentos mais recentes na área política.
 
-## Bug Resolvido
+- Entretenimento: A página de Entretenimento foi adicionada para trazer notícias sobre música, cinema, artistas, fofocas, séries e desenhos. Fique por dentro do mundo do entretenimento com as últimas novidades.
 
-Foi identificado um problema na renderização da página de entretenimento, onde havia excesso de divs e conflitos de estilos. Esse bug foi corrigido removendo as divs desnecessárias e ajustando os estilos para exibir as notícias lado a lado, com as imagens centralizadas e se adaptando ao tamanho da página.
+## Problema de Renderização
 
-## Planos Futuros
-
-- Adicionar o modelo `Topico` para categorizar as notícias por tópicos.
-- Implementar a funcionalidade de seleção de tópicos na página de administração para associar cada notícia a um ou mais tópicos.
-- Atualizar as páginas de listagem de notícias para exibir as notícias agrupadas por tópicos, de uma forma mais eficiente.
-- Aprimorar o design e a usabilidade das páginas.
-- Refinar os estilos e tornar o site responsivo para dispositivos móveis.
-- Expandir os modelos e funcionalidades para melhorar a administração do site.
-- Etc.
+- Atualmente, estamos enfrentando um problema com a renderização do HTML na página de Entretenimento. As notícias estão sendo exibidas em uma única coluna em vez de lado a lado, como pretendido. Estamos cientes desse problema e estamos trabalhando para encontrar uma solução o mais rápido possível. Pedimos desculpas pelo inconveniente e agradecemos a sua paciência.
 
 ## Como Executar o Projeto
 
 1. Clone este repositório.
-2. Crie um ambiente virtual e instale as dependências do Django.
-3. Execute as migrações do banco de dados.
-4. Execute o servidor de desenvolvimento do Django.
-5. Acesse o site em seu navegador.
+2. Crie e ative um ambiente virtual.
+3. Instale as dependências listadas no arquivo requirements.txt.
+4. Configure o banco de dados no arquivo settings.py.
+5. Execute as migrações do Django.
+6. Inicie o servidor de desenvolvimento.
+
+Agradecemos por acompanhar as atualizações do projeto e pedimos desculpas novamente pelo problema na página de Entretenimento. Faremos o possível para resolver esse problema o mais rápido possível. Fique à vontade para explorar as novas páginas de Política e Entretenimento e desfrutar das últimas notícias.
+
