@@ -1,18 +1,21 @@
-# noticias
+# Resolução do Problema do entreteriemento.html
 
-Site de Notícias
-Este é um projeto de site de notícias que visa fornecer aos usuários uma plataforma para visualizar e interagir com as últimas notícias. O site atualmente possui as seguintes páginas:
+Olá! Sou responsável pelo desenvolvimento do projeto do arquivo `entreteriemento.html` e gostaria de compartilhar as alterações que fiz recentemente. Além disso, implementei uma nova função de filtragem e corrigi alguns erros de HTML e CSS. Aqui está um resumo das mudanças feitas e os planos para o futuro.
 
-Página Inicial: Exibe as 7 principais notícias em destaque.
-Página de Notícias: Mostra todas as notícias disponíveis para visualização.
-Página de Contato: Permite que os usuários entrem em contato com a equipe do site.
-Recursos e Dependências
-Este projeto depende da biblioteca Pillow para processamento de imagens. Certifique-se de instalá-la antes de executar o site.
+## Alterações Realizadas
 
-Instalação e Configuração
-Clone este repositório em sua máquina local.
-Navegue até o diretório raiz do projeto.
-Crie um ambiente virtual para isolar as dependências do projeto (opcional, mas recomendado).
-Instale as dependências executando o seguinte comando: pip install Django e pip install Pillow
-Execute o seguinte comando para iniciar o site: python3 manage.py runserver.
-Abra um navegador da web e acesse http://localhost:8000 para visualizar o site.
+No processo de aprimoramento do arquivo `entreteriemento.html`, concentrei-me em melhorar a funcionalidade e a aparência. Aqui estão as principais alterações que fiz:
+
+- Corrigi erros de marcação no HTML para garantir uma estrutura correta do documento.
+- Realizei ajustes no código CSS para melhorar o posicionamento, cores e estilos dos elementos.
+- Adicionei uma nova função de filtragem para permitir que os usuários filtrem os itens de entretenimento por categorias, como filmes, séries, livros e jogos.
+
+## Futuros Planos
+
+Como desenvolvedor desse projeto, tenho alguns planos para continuar melhorando o arquivo `entreteriemento.html`:
+
+- Tornar o arquivo responsivo, para que ele seja visualizado corretamente em dispositivos móveis e tablets.
+- Continuar aprimorando o design geral, a estética e a usabilidade do arquivo `entreteriemento.html`.
+- Explorar maneiras de melhorar a interatividade e a experiência do usuário no projeto.
+
+Estou empolgado com o progresso alcançado até agora e animado para implementar essas melhorias no futuro próximo.

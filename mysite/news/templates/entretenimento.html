@@ -1,0 +1,42 @@
+<!-- noticias.html -->
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Entretenimento{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/e2.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="filtro-container">
+  <label for="filtro-select">Filtrar por sub-legenda:</label>
+  <select id="filtro-select" class="filtro-select" onchange="filtrarNoticias()">
+    <option value="todos">Todos</option>
+    {% for sub_legenda in sub_legendas %}
+      <option value="{{ sub_legenda }}">{{ sub_legenda }}</option>
+    {% endfor %}
+  </select>
+</div>
+
+{% for sub_legenda in sub_legendas %}
+  <div class="container-noticia" id="{{ sub_legenda }}">
+    <h3>{{ sub_legenda }}</h3>
+    <div class="noticias-container">
+      {% for noticia in noticias %}
+        {% if noticia.sub_legenda == sub_legenda or filtro == 'todos' %}
+          <div class="noticia">
+            <a href="{% url 'noticias:noticia' noticia.id %}">
+              <img src="{{ noticia.imagem.url }}" alt="{{ noticia.titulo }}" width="800" height="450">
+              <h2>{{ noticia.titulo }}</h2>
+            </a>
+            <p class="data"><strong>Data de publicação:</strong> {{ noticia.data_publicacao }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+
+<script src="{% static 'js/entrete.js' %}"></script>
+{% endblock %}
