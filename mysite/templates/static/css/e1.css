@@ -44,8 +44,9 @@
 }
 
 .noticia {
+  background-color: #ffffff;
   display: inline-block;
-  width: calc(33.33% - 20px); /* Tamanho padrão das notícias */
+  width: calc(33.33% - 10px); /* Tamanho padrão das notícias */
   margin-right: 20px;
   vertical-align: top;
   padding: 10px;
