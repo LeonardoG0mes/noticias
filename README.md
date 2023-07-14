@@ -16,3 +16,8 @@ Crie um ambiente virtual para isolar as dependências do projeto (opcional, mas 
 Instale as dependências executando o seguinte comando: pip install Django e pip install Pillow
 Execute o seguinte comando para iniciar o site: python3 manage.py runserver.
 Abra um navegador da web e acesse http://localhost:8000 para visualizar o site.
+
+
+## Senha de Admin
+login : admin123
+senha : admin123
